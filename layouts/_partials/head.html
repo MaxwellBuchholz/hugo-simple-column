@@ -1,0 +1,15 @@
+<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>{{ if .Title }}{{ .Title }} | {{ end }} {{ site.Title }}</title>
+		{{ with site.Params.subtitle }}<meta name="description" content="{{ . }}">{{ end }}
+		{{ with site.Params.Author.name }}<meta name="author" content="{{ . }}">{{ end }}
+
+		{{- with resources.Get "style.css" | resources.ExecuteAsTemplate "style.css" . }}
+			{{- if hugo.IsDevelopment }}
+		<link rel="stylesheet" href="{{ .RelPermalink }}">
+			{{- else }}
+				{{- with . | minify | fingerprint }}
+		<link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+				{{- end }}
+	    		{{- end }}
+		{{- end }}

@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+	<div class="title">
+		<h1 class="titletext">
+			404 Not Found
+		</h1>
+	</div>
+
+	<div class="content">
+		<p>
+			The page you requested could not be found.
+			<a href="{{ .Site.Home.RelPermalink }}">Go home.</a>
+		</p>
+	</div>
+{{ end }}

@@ -1,0 +1,59 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-US'
+title = 'My Site'
+theme = 'hugo-simple-column'
+
+# Paramater for the entire site
+[params]
+	subtitle = "It's my site"
+	footer = "Hugo theme by [Maxwell Buchholz](https://github.com/MaxwellBuchholz)"
+
+	[params.author]
+		name = "Web Author"
+
+	[params.font]
+		titlefont = "Arial, Helvetica, sans-serif"
+		textfont = "Arial, Helvetica, sans-serif"
+
+	[params.colors]
+		backgroundcolor = "#b2e3ff"
+		textbackgroundcolor = "white"
+		textcolor = "black"
+		linkcolor = "#00009E"
+		titlecolor = "#5F91EC"
+
+	[params.colors.dark]
+		backgroundcolor = "#111361"
+		textbackgroundcolor = "#1B1B1B"
+		textcolor = "white"
+		linkcolor = "white"
+		titlecolor = "#4569ab"
+
+# Navigation
+# Use weight to determine order, lower number mean higher priority.
+# Add or remove as many menu items as needed
+[menu]
+	[[menu.main]]
+		name = "Home"
+		url = "/"
+		weight = 1
+
+	[[menu.main]]
+		name = "Elements"
+		url = "/elements"
+		weight = 2
+
+	[[menu.main]]
+		name = "Link 1"
+		url = "/link"
+		weight = 3
+
+	[[menu.main]]
+		name = "Link 2"
+		url = "/link2"
+		weight = 4
+
+	[[menu.main]]
+		name = "Link 3"
+		url = "/link3"
+		weight = 5
