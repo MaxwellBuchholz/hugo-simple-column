@@ -1,0 +1,11 @@
+name = "Hugo Simple Column"
+license = "GPLv3"
+licenselink = "https://github.com/MaxwellBuchholz/hugo-simple-coloumn/blob/main/LICENSE"
+description = "A simple hugo theme."
+homepage = "https://github.com/MaxwellBuchholz/hugo-simple-coloumn"
+tags = ["minimal"]
+features = ["Dark/Light mode", "No JavaScript"]
+
+[author]
+	name = "Maxwell Buchholz"
+	homepage = "https://github.com/MaxwellBuchholz"
