@@ -3,6 +3,7 @@ license = "GPLv3"
 licenselink = "https://github.com/MaxwellBuchholz/hugo-simple-coloumn/blob/main/LICENSE"
 description = "A simple hugo theme."
 homepage = "https://github.com/MaxwellBuchholz/hugo-simple-coloumn"
+demosite = "https://maxwellbuchholz.github.io/hugo-simple-column-demo-site/"
 tags = ["minimal"]
 features = ["Dark/Light mode", "No JavaScript"]
 
