@@ -1,4 +1,4 @@
-# Hugo Simple Coloumn
+# Hugo Simple Column
 
 ![Screenshot of example website using the theme](https://raw.githubusercontent.com/MaxwellBuchholz/hugo-simple-column/main/images/screenshot.png)
 
