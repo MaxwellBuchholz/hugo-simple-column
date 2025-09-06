@@ -44,16 +44,16 @@ theme = 'hugo-simple-column'
 		weight = 2
 
 	[[menu.main]]
-		name = "Link 1"
-		url = "/link"
+		name = "Posts"
+		url = "/posts"
 		weight = 3
+
+	[[menu.main]]
+		name = "Link 1"
+		url = "/link1"
+		weight = 4
 
 	[[menu.main]]
 		name = "Link 2"
 		url = "/link2"
-		weight = 4
-
-	[[menu.main]]
-		name = "Link 3"
-		url = "/link3"
 		weight = 5

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+	<head>
+		{{ partial "head.html" . }}
+	</head>
+	<body>
+		<div class="slim">
+			<div class="nav">
+				{{ partial "nav.html" . }}
+			</div>
+			<div class="main">
+				{{ block "main" . }}{{ end }}
+			</div>
+			<div class="border"></div>
+		<footer class="footer">
+			<p class="footertext">
+				{{ with site.Params.footer }}{{ . | markdownify }}{{ end }}
+			</p>
+		</footer>
+		</div>
+	</body>
+</html>

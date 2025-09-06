@@ -1,0 +1,44 @@
+{{ define "main" }}
+	{{ $sectionDelimiter := "<!-- section break -->" }}
+	{{ $rawContentSections := split .RawContent $sectionDelimiter }}
+	{{ if gt (len $rawContentSections) 1 }}
+		{{ if .Params.titlebar }}
+			{{ range $i, $e := .Params.titlebar }}
+				<div class="title">
+					<h1 class = "titletext">
+						{{ . }}
+					</h1>
+				</div>
+				<div class="content">
+					<p>
+						{{ index $rawContentSections $i | markdownify }}
+					</p>
+				</div>
+			{{ end }}
+		{{ end }}
+	{{ else }}
+		{{ range .Params.titlebar }}
+			<div class="title">
+				<h1 class="titletext">
+					{{ . }}
+				</h1>
+			</div>
+		{{ end }}
+		<div class="content">
+			<p>
+				Test?
+			</p>
+		</div>
+	{{ end }}
+	<div class=title>
+		<h1 class="titletext">Posts</h1>
+	</div>
+	<div class=content>
+		{{ range .Pages }}
+			<p>
+				<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+			</p>
+		{{ end }}
+	</div>
+
+{{ end }}

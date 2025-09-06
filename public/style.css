@@ -1,13 +1,13 @@
 :root {
-	{{ with site.Params.Colors.backgroundcolor }}--background-color: {{ . }};{{ end }}
-	{{ with site.Params.Colors.textbackgroundcolor }}--text-background-color: {{ . }};{{ end }}
-	{{ with site.Params.Colors.textcolor }}--text-color: {{ . }};{{ end }}
-	{{ with site.Params.Colors.linkcolor }}--link-color: {{ . }};{{ end }}
-	{{ with site.Params.Colors.titlecolor }}--title-color: {{ . }};{{ end }}
-	{{ with site.Params.Img.image }}--banner:url( {{ . }} );{{ end }}
-	{{ with site.Params.Img.titlebar }}--title-bar:url( {{ . }} );{{ end }}
-	{{ with site.Params.Font.titlefont }}--title-font: {{ . }};{{ end }}
-	{{ with site.Params.Font.textfont }}--text-font: {{ . }};{{ end }}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	--spacing: 15px;
 	--border: 1px solid #000000;
 }
@@ -15,12 +15,12 @@
 /*Dark Mode*/
 @media (prefers-color-scheme: dark) {
 	:root {
-		{{ with site.Params.Colors.Dark.backgroundcolor }}--background-color: {{ . }};{{ end }}
-		{{ with site.Params.Colors.Dark.textbackgroundcolor }}--text-background-color: {{ . }};{{ end }}
-		{{ with site.Params.Colors.Dark.textcolor }}--text-color: {{ . }};{{ end }}
-		{{ with site.Params.Colors.Dark.linkcolor }}--link-color: {{ . }};{{ end }}
-		{{ with site.Params.Colors.Dark.titlecolor }}--title-color: {{ . }};{{ end }}
-		{{ with site.Params.Img.Dark.image }}--banner:url( {{ . }} );{{ end }}
+		
+		
+		
+		
+		
+		
 	}
 }
 
