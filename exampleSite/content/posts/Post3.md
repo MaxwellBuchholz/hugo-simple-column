@@ -1,6 +1,6 @@
 ---
 draft: false
-title: "Post 1"
+title: "Post 3"
 titlebar:
 - "Section"
 - "Another section"
